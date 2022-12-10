@@ -1,0 +1,13 @@
+.card-description {
+    background-color: rgb(42, 42, 42);
+    width: 110%;
+    padding-left: 40%;
+    color: rgb(217, 214, 214);
+}
+
+.cv {
+    background-color: white;
+    width: fit-content;
+    padding: 5px;
+    height: auto;
+}
