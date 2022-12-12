@@ -1,0 +1,60 @@
+/* --- Partie projets --- */
+.grid-project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-project a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Forme de chaque case de projet */
+.grid-project > div {
+    border: 5px solid;
+    border-radius: 10px;
+    width: 90%;
+    height: 450px;
+    margin-left: 20px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Images des card */
+.grid-project img {
+    border-bottom: 2px solid;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.grid-project .project-date {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.grid-project .project-title {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.grid-project .project-description {
+    display: flex;
+    text-align: center;
+    margin-right: 20px;
+}
+
+/* --- Responsive grid --- */
+@media only screen and (max-width: 800px) {
+    .grid-project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+}

@@ -4,8 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style.css" rel="stylesheet" type="text/css">
+        
         <title>Blog-Portfolio - Matéo PALMIERI</title>
+
+        <!-- CSS -->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/project.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
@@ -18,21 +22,23 @@
 
         <!-- Carte de présentation -->
         <!-- Fond blanc -->
-        <h3>À propos</h3>
-        <div class="card-description">
+        <div class="part-about">
+            <h3>À propos de moi</h3>
+            <div class="card-description">
 
-            <!-- Photo de profil (essayer d'en prendre une qui fait pro) -->
-            <img>
-            <p>Ceci est un texte de présentation</p>
+                <!-- Photo de profil (essayer d'en prendre une qui fait pro) -->
+                <img src="media/pp.png" alt="image de profil">
+                <p>Bonjour, je suis Matéo PALMIERI, un étudiant en 3ème année pour devenir développeur web / logiciel au campus d'Ynov à Aix-en-Provence.</p>
 
-            <ul>
-                <li>Résidence: France</li>
-                <li>Adresse: Miramas - 13140</li>
-                <li>E-mail:<a href="mailto:mateo.palmieri.pro@gmail.com">mateo.palmieri.pro@gmail.com</a></li>
-            </ul>
+                <ul>
+                    <li><strong>Résidence:</strong> France</li>
+                    <li><strong>Adresse:</strong> Miramas - 13140</li>
+                    <li></strong>E-mail:</strong> <a href="mailto:mateo.palmieri.pro@gmail.com">mateo.palmieri.pro@gmail.com</a></li>
+                </ul>
 
-            <!-- Animation pour le bouton avec :hoover -->
-            <div class="cv"><a href="media/CV_Mateo_PALMIERI.pdf" target="_blank">Télécharger mon CV</a></div>
+                <!-- Animation pour le bouton avec :hoover -->
+                <div class="cv"><a href="media/CV_Mateo_PALMIERI.pdf" target="_blank">Télécharger mon CV</a></div>
+            </div>
         </div>
 
         <!-- Mise en page simple -->
@@ -58,8 +64,65 @@
         <!-- fond blanc -->
         <h3>Projets</h3>
         <div class="grid-project">
-            <p>FriendlyFire</p>
-            <p>Secret App</p>
+            <!-- Friendlyfire -->
+            <div class="project-card">
+                <a href="">
+                    <img class="project-image" src="media/friendlyfire.png" alt="">
+
+                    <div class="project-date">
+                        <time>2020 - 2021</time>
+                    </div>
+        
+                    <!-- Titre de l'article -->
+                    <div class="project-title">
+                        <h3>FriendlyFire</h3>
+                    </div>
+                    <!-- Extrait de l'article -->
+                    <div class="project-description">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam voluptatibus autem consectetur voluptate facere at, omnis ab optio placeat officiis! Animi modi harum enim quia veniam consectetur unde autem inventore.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Secret App -->
+            <div class="project-card">
+                <a href="">
+                    <img class="project-image" id="friendlyfire" src="media/test.jpeg" alt="">
+
+                    <div class="project-date">
+                        <time>2023</time>
+                    </div>
+        
+                    <!-- Titre de l'article -->
+                    <div class="project-title">
+                        <h3>Application secrète</h3>
+                    </div>
+                    <!-- Extrait de l'article -->
+                    <div class="project-description">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam voluptatibus autem consectetur voluptate facere at, omnis ab optio placeat officiis! Animi modi harum enim quia veniam consectetur unde autem inventore.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Test -->
+            <div class="project-card">
+                <a href="">
+                    <img class="project-image" src="media/test.jpeg" alt="">
+
+                    <div class="project-date">
+                        <time>XXXX - XXXX</time>
+                    </div>
+        
+                    <!-- Titre de l'article -->
+                    <div class="project-title">
+                        <h3>TITRE</h3>
+                    </div>
+                    <!-- Extrait de l'article -->
+                    <div class="project-description">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam voluptatibus autem consectetur voluptate facere at, omnis ab optio placeat officiis! Animi modi harum enim quia veniam consectetur unde autem inventore.</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </body>
 

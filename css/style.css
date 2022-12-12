@@ -1,0 +1,55 @@
+/* --- HTML / BODY --- */
+html {
+    /* Empêche le scroll horizontal */
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Titre blog-portfolio --- */
+.segment-1 {
+    background-attachment: fixed;
+    background-image: url("../media/image1.jpg");
+    background-size: cover;
+    background-position: 35% 65%;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.segment-1 h1 {
+    color: white;
+    padding-left: 40%;
+}
+
+.part-about {
+    background-color: black;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.card-description {
+    background-color: #2f2235;
+    color: rgb(255, 255, 255);
+
+    padding: 15px 10%;
+
+    margin: 5% 15%;
+
+    border-radius: 10px;
+}
+
+.card-description img {
+    width: 30%;
+    border: linear-gradient(white);
+    border: 7px solid #4bffa5;
+}
+
+.cv {
+    background-color: white;
+    width: fit-content;
+    padding: 5px;
+    height: auto;
+}
