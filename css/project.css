@@ -16,7 +16,7 @@
     border: 5px solid;
     border-radius: 10px;
     width: 90%;
-    height: 450px;
+    height: auto;
     margin-left: 20px;
 
     background-repeat: no-repeat;
@@ -50,11 +50,22 @@
 }
 
 /* --- Responsive grid --- */
+/* Tablette */
 @media only screen and (max-width: 800px) {
     .grid-project {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 588px) {
+    .grid-project {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
         grid-auto-rows: minmax(100px, auto);
     }
 }

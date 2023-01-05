@@ -13,6 +13,14 @@
     </head>
 
     <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#part-about-title">À propos</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#projects">Projets</a></li>
+            </ul>
+        </nav>
+
         <div class="segment-1">
             <h1>Blog Portfolio</h1>
         </div>
@@ -23,7 +31,7 @@
         <!-- Carte de présentation -->
         <!-- Fond blanc -->
         <div class="part-about">
-            <h3>À propos de moi</h3>
+            <h3 id="part-about-title">À propos de moi</h3>
             <div class="card-description">
 
                 <!-- Photo de profil (essayer d'en prendre une qui fait pro) -->
@@ -37,7 +45,7 @@
                 </ul>
 
                 <!-- Animation pour le bouton avec :hoover -->
-                <div class="cv"><a href="media/CV_Mateo_PALMIERI.pdf" target="_blank">Télécharger mon CV</a></div>
+                <button class="cv"><a href="media/CV_Mateo_PALMIERI.pdf" target="_blank">Télécharger mon CV</a></button>
             </div>
         </div>
 
@@ -62,7 +70,10 @@
 
         <!-- Utilisation de grid ou flexbox pour créer des cadres présentant les projets -->
         <!-- fond blanc -->
-        <h3>Projets</h3>
+
+        <!-- Pour le responsive mobile, s'inspirer d'un scroll snap CSS only -->
+        <!-- https://www.instagram.com/reel/CgVxdiTNtH8/?utm_source=ig_web_copy_link -->
+        <h3 id="projects">Projets</h3>
         <div class="grid-project">
             <!-- Friendlyfire -->
             <div class="project-card">
@@ -126,7 +137,22 @@
         </div>
     </body>
 
-    <footer>
-        <p>Footer</p>
+    <footer class="footer">
+        <div class="footer-col">
+            <h3>Sections</h3>
+            <ul>
+                <li><a href="#part-about-title">À propos</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#projects">Projets</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Réseaux</h3>
+            <ul>
+                <li><a href="https://github.com/MateoPalmieri" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/mat%C3%A9o-palmieri/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/mat.palm/" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
     </footer>
 </html>

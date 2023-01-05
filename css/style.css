@@ -1,13 +1,58 @@
+:root {
+    --test: yellow;
+    --test2: blue;
+
+    --temp-dark: #2f2235;
+}
+
+
 /* --- HTML / BODY --- */
 html {
     /* Empêche le scroll horizontal */
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     padding: 0;
 }
+
+/* Thème sombre */
+@media (prefers-color-scheme: dark) {
+    .part-about {
+        background-color: var(--test);
+    }
+}
+
+/* Thème clair */
+@media (prefers-color-scheme: light) {
+    .part-about {
+        background-color: var(--test);
+    }
+}
+
+.navbar {
+    position: fixed;
+    background-color: var(--temp-dark);
+    color: white;
+    text-decoration: none;
+    height: 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+
+
 
 /* --- Titre blog-portfolio --- */
 .segment-1 {
@@ -20,18 +65,28 @@ body {
 }
 
 .segment-1 h1 {
+    font-size: 50px;
     color: white;
     padding-left: 40%;
+    margin: 0;
+    padding-top: 170px;
 }
 
+/* --- Partie A propos --- */
 .part-about {
-    background-color: black;
+    background-color: rgb(14, 13, 13);
     color: white;
     padding-bottom: 50px;
 }
 
+#part-about-title {
+    margin: 0;
+    padding: 30px 30px;
+    font-size: 30px;
+}
+
 .card-description {
-    background-color: #2f2235;
+    background-color: var(--temp-dark);
     color: rgb(255, 255, 255);
 
     padding: 15px 10%;
@@ -48,8 +103,60 @@ body {
 }
 
 .cv {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: fit-content;
     padding: 5px;
     height: auto;
+    border-radius: 5px;
+}
+
+.cv a {
+    text-decoration: none;
+}
+
+
+
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(14, 13, 13);
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-col {
+    width: 35%;
+}
+
+.footer-col:first-child {
+    padding-left: 25%;
+}
+
+.footer h3 {
+    color: rgb(255, 255, 255);
+}
+
+.footer ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.footer ul li {
+    padding-top: 10px;
+}
+
+/* Liens footer */
+.footer a {
+    text-decoration:none;
+    color: rgb(206, 209, 209);
+    transition: 1s;
+}
+
+.footer a:hover {
+    color: white;
+    transition: 1s;
 }
