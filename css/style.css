@@ -5,12 +5,19 @@
     --temp-dark: #2f2235;
 }
 
+/* Polices d'écritures */
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
 
 /* --- HTML / BODY --- */
 html {
     /* Empêche le scroll horizontal */
     overflow-x: hidden;
     scroll-behavior: smooth;
+    font-family: Montserrat;
 }
 
 body {
@@ -32,12 +39,29 @@ body {
     }
 }
 
+/* Barre de navigation */
 .navbar {
-    position: fixed;
     background-color: var(--temp-dark);
     color: white;
     text-decoration: none;
     height: 50px;
+    width: 100%;
+}
+
+.navbar ul {
+    margin-top: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 0 15px;
+    text-decoration: none;
+    padding-top: 15px;
+    width: 15%;
+}
+
+.navbar ul li:first-child {
+    padding-left: 15%;
 }
 
 .navbar a {
@@ -45,11 +69,6 @@ body {
     color: white;
 }
 
-.navbar ul li {
-    display: inline-block;
-    padding: 0 15px;
-    text-decoration: none;
-}
 
 
 
@@ -72,6 +91,9 @@ body {
     padding-top: 170px;
 }
 
+
+
+
 /* --- Partie A propos --- */
 .part-about {
     background-color: rgb(14, 13, 13);
@@ -88,23 +110,15 @@ body {
 .card-description {
     background-color: var(--temp-dark);
     color: rgb(255, 255, 255);
-
-    padding: 15px 10%;
-
-    margin: 5% 15%;
+    height: 500px;
+    padding: 30px 30px;
+    margin: 0 60px;
 
     border-radius: 10px;
 }
 
-.card-description img {
-    width: 30%;
-    border: linear-gradient(white);
-    border: 7px solid #4bffa5;
-}
-
 .cv {
     background-color: rgb(255, 255, 255);
-    width: fit-content;
     padding: 5px;
     height: auto;
     border-radius: 5px;
@@ -112,6 +126,35 @@ body {
 
 .cv a {
     text-decoration: none;
+}
+
+.part-about-first {
+    float: left;
+    width: 600px;
+}
+
+.part-about-first img {
+    max-width: 70%;
+    border: 5px solid #bdfcdc;
+    border-radius: 5px;
+}
+
+.part-about-second {
+    margin-left: 50%;
+}
+
+
+
+
+/* Compétences */
+.list-competences {
+    font-size: 20px;
+}
+
+#list-competences-title {
+    margin: 0;
+    padding: 30px 30px;
+    font-size: 30px;
 }
 
 

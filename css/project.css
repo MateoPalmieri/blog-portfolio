@@ -1,4 +1,11 @@
 /* --- Partie projets --- */
+
+#projects-title {
+    margin: 0;
+    padding: 30px 30px;
+    font-size: 30px;
+}
+
 .grid-project {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
