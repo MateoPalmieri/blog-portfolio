@@ -2,8 +2,9 @@
 
 #projects-title {
     margin: 0;
-    padding: 30px 30px;
+    padding: 50px 0;
     font-size: 30px;
+    text-align: center;
 }
 
 .grid-project {

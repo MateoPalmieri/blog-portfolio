@@ -1,0 +1,195 @@
+:root {
+    --progress-bar: green;
+}
+
+/* ----------------------------------------------------------------------------------------------- 
+                                        Positions
+----------------------------------------------------------------------------------------------- */
+.competence-language {
+    /* background-color: rgb(243, 84, 84); */
+    float: left;
+    width: 50%;
+    height: 30rem;
+}
+
+.competence-framework {
+    /* background-color: rgb(88, 88, 255); */
+    display: inline-block;
+    width: 50%;
+    height: 30rem;
+}
+
+.competence-language h2,
+.competence-framework h2 {
+    text-align: center;
+}
+
+.competence-language img,
+.competence-framework img {
+    width: 3rem;
+}
+
+.aligned {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.aligned span {
+    padding-left: 1rem;
+}
+
+.progress-bar-wrapper {
+    background-color: #dfe6e9;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+    margin: 0 2rem;
+}
+.progress-bar {
+    background-color: green;
+    color: white;
+    padding: 1px;
+    text-align: right;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.symfony {
+    width: 60%;
+}
+
+.nextjs {
+    width: 40%;
+}
+
+.react {
+    width: 25%;
+}
+
+.angular {
+    text-align: center;
+    background-color: black;
+}
+
+
+/* ----------------------------------------------------------------------------------------------- 
+                                        Animations
+----------------------------------------------------------------------------------------------- */
+
+/* Language */
+.php {
+    animation: php 2s linear forwards;
+    color: var(--progress-bar);
+}
+@keyframes php {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+        color: white;
+    }
+}
+
+.python {
+    animation: python 2s linear forwards;
+    color: var(--progress-bar);
+}
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+        color: white;
+    }
+}
+
+.java {
+    animation: java 2s linear forwards;
+    color: var(--progress-bar);
+}
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+        color: white;
+    }
+}
+
+.csharp {
+    animation: csharp 2s linear forwards;
+    color: var(--progress-bar);
+}
+@keyframes csharp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 20%;
+        color: white;
+    }
+}
+
+
+/* Framework */
+.symfony {
+    animation: symfony 2s linear forwards;
+    color: var(--progress-bar);
+}
+@keyframes symfony {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+        color: white;
+    }
+}
+
+.nextjs {
+    animation: nextjs 2s linear forwards;
+    color: var(--progress-bar);
+}
+@keyframes nextjs {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+        color: white;
+    }
+}
+
+.react {
+    animation: react 2s linear forwards;
+    color: var(--progress-bar);
+}
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+        color: white;
+    }
+}
+
+.angular {
+    animation: angular 2s linear infinite;
+}
+@keyframes angular {
+    0% {
+        color: white;
+    }
+    50% {
+        color: rgb(20, 102, 255);
+    }
+    100% {
+        color: white;
+    }
+}

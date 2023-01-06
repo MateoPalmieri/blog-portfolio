@@ -9,6 +9,7 @@
 
         <!-- CSS -->
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/competence.css" rel="stylesheet" type="text/css">
         <link href="css/project.css" rel="stylesheet" type="text/css">
     </head>
 
@@ -26,51 +27,98 @@
             <h1>Blog Portfolio</h1>
         </div>
 
-        <!-- en mode nuit tout devra s'assombrir -->
-        <!-- Idée : faire un bouton pour simplement inverser les fonds sombres et clairs -->
-
         <!-- Carte de présentation -->
-        <!-- Fond blanc -->
         <div class="part-about">
             <h3 id="part-about-title">À propos de moi</h3>
             <div class="card-description">
 
-                <!-- Photo de profil (essayer d'en prendre une qui fait pro) -->
-                <div class="part-about-first">
-                    <img src="media/pp.png" alt="image de profil">
+                <div class="part-about-container">
+
+                    <!-- Photo de profil (essayer d'en prendre une qui fait pro) -->
+                    <div class="part-about-image">
+                        <img src="media/pp.png" alt="image de profil">
+                    </div>
+
+                    <div class="part-about-text">
+                        <ul>
+                            <li><strong>Résidence:</strong> France</li>
+                            <li><strong>Adresse:</strong> Miramas - 13140</li>
+                            <li><strong>E-mail:</strong> <a href="mailto:mateo.palmieri.pro@gmail.com">mateo.palmieri.pro@gmail.com</a></li>
+                        </ul>
+                        <p>Bonjour, je suis Matéo PALMIERI, un étudiant en 3ème année pour devenir développeur web / logiciel au campus d'Ynov à Aix-en-Provence.</p>
+                        <button class="cv"><a href="media/CV_Mateo_PALMIERI.pdf" target="_blank">Télécharger mon CV</a></button>
+                        <!-- Attention ! les bouton ne doivent pas contenir autre chose : accessibilité -->
+                    </div>
                 </div>
 
-                <div class="part-about-second">
-                    <ul>
-                        <li><strong>Résidence:</strong> France</li>
-                        <li><strong>Adresse:</strong> Miramas - 13140</li>
-                        <li></strong>E-mail:</strong> <a href="mailto:mateo.palmieri.pro@gmail.com">mateo.palmieri.pro@gmail.com</a></li>
-                    </ul>
-                    <p>Bonjour, je suis Matéo PALMIERI, un étudiant en 3ème année pour devenir développeur web / logiciel au campus d'Ynov à Aix-en-Provence.</p>
-    
-                    <!-- Animation pour le bouton avec :hoover -->
-                    <button class="cv"><a href="media/CV_Mateo_PALMIERI.pdf" target="_blank">Télécharger mon CV</a></button>
+            </div>
+        </div>
+
+        <!-- Langage -->
+        <div class="competence-language">
+            <h2>Langages :</h2>
+            <div class="aligned">
+                <img src="media/php.png" width="50" alt="logo de PHP"> 
+                <span>PHP</span>
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar php">70%</div>
+                </div>
+            </div>
+            <div class="aligned">
+                <img src="media/python.png" width="50" alt="logo de Python">
+                <span>Python</span>
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar python">50%</div>
+                </div>
+            </div>
+            <div class="aligned">
+                <img src="media/java.png" width="50" alt="logo de Java">
+                <span>Java, Golang</span>
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar java">25%</div>
+                </div>
+            </div>
+            <div class="aligned">
+                <img src="media/csharp.png" width="50" alt="logo de C#">
+                <span>C# / C++</span>
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar csharp">20%</div>
                 </div>
             </div>
         </div>
 
-        <!-- Mise en page simple -->
-        <!-- Fond noir -->
-        <div class="list-competences">
-            <h3 id="list-competences-title">Compétences</h3>
-            <p>Langages :</p>
-            <ul>
-                <li>PHP</li>
-                <li>Python</li>
-                <li>C# / C++</li>
-                <li>Java, Golang</li>
-            </ul>
-            <p>Framework :</p>
-            <ul>
-                <li>Symfony</li>
-                <li>NextJS (création d'une API Restful)</li>
-                <li>React (en cours)</li>
-            </ul>
+        <!-- Framework -->
+        <div class="competence-framework">
+            <h2>Framework :</h2>
+            <div class="aligned">
+                <img src="media/symfony.png" width="50" alt="logo de Symfony"> 
+                <span>Symfony</span>
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar symfony">60%</div>
+                </div>
+            </div>
+            <div class="aligned">
+                <img src="media/nextjs.png" width="50" alt="logo de NextJS"> 
+                <!-- <span>NextJS (API Restful)</span> -->
+                <span>NextJS</span>
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar nextjs">40%</div>
+                </div>
+            </div>
+            <div class="aligned">
+                <img src="media/react.png" width="50" alt="logo de React">
+                <span>React</span>
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar react">25%</div>
+                </div>
+            </div>
+            <div class="aligned">
+                <img src="media/angular.png" width="50" alt="logo de Angular">
+                <span>Angular</span>
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar angular">En cours</div>
+                </div>
+            </div>
         </div>
 
         <!-- Utilisation de grid ou flexbox pour créer des cadres présentant les projets -->
@@ -83,7 +131,7 @@
             <!-- Friendlyfire -->
             <div class="project-card">
                 <a href="">
-                    <img class="project-image" src="media/friendlyfire.png" alt="">
+                    <img class="project-image" src="media/friendlyfire2.png" alt="">
 
                     <div class="project-date">
                         <time>2020 - 2021</time>

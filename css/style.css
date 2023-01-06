@@ -94,9 +94,14 @@ body {
 
 
 
+
 /* --- Partie A propos --- */
 .part-about {
-    background-color: rgb(14, 13, 13);
+    /* https://uigradients.com/#Lawrencium */
+    /* background: #0f0c29; */  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); */  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     color: white;
     padding-bottom: 50px;
 }
@@ -108,53 +113,63 @@ body {
 }
 
 .card-description {
-    background-color: var(--temp-dark);
+    background-color: #0f0c29;
     color: rgb(255, 255, 255);
-    height: 500px;
+    height: 40%;
     padding: 30px 30px;
     margin: 0 60px;
 
     border-radius: 10px;
 }
 
-.cv {
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-    height: auto;
-    border-radius: 5px;
+.part-about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.cv a {
-    text-decoration: none;
-}
-
-.part-about-first {
-    float: left;
-    width: 600px;
-}
-
-.part-about-first img {
-    max-width: 70%;
+.part-about-container img {
+    max-width: 100%;
     border: 5px solid #bdfcdc;
     border-radius: 5px;
 }
 
-.part-about-second {
-    margin-left: 50%;
+.part-about-image {
+    flex-basis: 40%
 }
 
-
-
-
-/* Compétences */
-.list-competences {
+.part-about-text {
     font-size: 20px;
+    padding-left: 20px;
 }
 
-#list-competences-title {
-    margin: 0;
-    padding: 30px 30px;
-    font-size: 30px;
+.part-about-text ul {
+    position: relative;
+    bottom: 130px;
+}
+
+.cv {
+    background-color: #222;
+    position: relative;
+    padding: 5px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 9px 20px 8px;
+    cursor: pointer;
+    top: 50px;
+    left: 700px;
+}
+
+.cv:hover,
+.cv:focus {
+  opacity: .75;
+  transition: 0.2s;
+}
+
+.cv a {
+    text-decoration: none;
+    color: white;
 }
 
 
