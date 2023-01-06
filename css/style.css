@@ -96,80 +96,106 @@ body {
 
 
 /* --- Partie A propos --- */
-.part-about {
+.about-me {
     /* https://uigradients.com/#Lawrencium */
     /* background: #0f0c29; */  /* fallback for old browsers */
     /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); */  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    padding-bottom: 50px;
 }
-
-#part-about-title {
-    margin: 0;
-    padding: 30px 30px;
-    font-size: 30px;
-}
-
-.card-description {
+.about-me-card {
     background-color: #0f0c29;
-    color: rgb(255, 255, 255);
-    height: 40%;
-    padding: 30px 30px;
-    margin: 0 60px;
-
+    width: 90%;
+    height: 500px;
     border-radius: 10px;
 }
+.pp {
+    /* background-color: brown; */
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+.pp img {
+    display: block;
+    width: auto;
+    height: 100%;
+    padding-left: 5%;
+}
 
-.part-about-container {
+.text1 {
+    /* background-color: blue; */
+    position: absolute;
+    margin-left: 27%;
+    margin-top: 0;
+    width: 63%;
+    height: 11rem;
+    font-size: larger;
+}
+.text1 .p1 {
+    /* background-color: chartreuse; */
+    height: 50%;
+    width: 100%;
+    position: absolute;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.part-about-container img {
-    max-width: 100%;
-    border: 5px solid #bdfcdc;
-    border-radius: 5px;
+.text1 .p2 {
+    /* background-color: red; */
+    top: 50%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
+.p1 p,
+.p2 p {
+    padding-left: 5%;
+    padding-right: 15%;
+}
+.text2 {
+    /* background-color: aqua; */
+    position: absolute;
+    margin-left: 27%;
+    margin-top: 11rem;
+    width: 63%;
+    height: 13rem;
+    font-size: larger;
 }
 
-.part-about-image {
-    flex-basis: 40%
+.button-cv {
+    /* background-color: chartreuse; */
+    position: absolute;
+    margin-left: 27%;
+    margin-top: 24rem;
+    width: 63%;
+    height: 7rem;
+    text-align: center;
 }
-
-.part-about-text {
-    font-size: 20px;
-    padding-left: 20px;
-}
-
-.part-about-text ul {
-    position: relative;
-    bottom: 130px;
-}
-
-.cv {
+.button-cv button {
+    position: absolute;
+    top: 30%;
+    left: 65%;
     background-color: #222;
-    position: relative;
-    padding: 5px;
-    height: 44px;
+    color: rgb(233, 233, 233);
     font-size: 16px;
     font-weight: 700;
     border-radius: 5px;
     padding: 9px 20px 8px;
     cursor: pointer;
-    top: 50px;
-    left: 700px;
+}
+.button-cv button:hover,
+.button-cv button:focus {
+    opacity: .75;
+    transition: 0.2s;
 }
 
-.cv:hover,
-.cv:focus {
-  opacity: .75;
-  transition: 0.2s;
-}
-
-.cv a {
-    text-decoration: none;
-    color: white;
+#about-me-title {
+    margin: 0;
+    padding: 0 30px;
+    font-size: 30px;
 }
 
 

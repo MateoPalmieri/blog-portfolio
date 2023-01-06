@@ -16,9 +16,9 @@
     <body>
         <nav class="navbar">
             <ul>
-                <li><a href="#part-about-title">À propos</a></li>
+                <li><a href="#about-me">À propos</a></li>
                 <li><a href="#cv">CV</a></li>
-                <li><a href="#list-competences-title">Compétences</a></li>
+                <li><a href="#competence">Compétences</a></li>
                 <li><a href="#projects-title">Projets</a></li>
             </ul>
         </nav>
@@ -28,34 +28,36 @@
         </div>
 
         <!-- Carte de présentation -->
-        <div class="part-about">
-            <h3 id="part-about-title">À propos de moi</h3>
-            <div class="card-description">
-
-                <div class="part-about-container">
-
-                    <!-- Photo de profil (essayer d'en prendre une qui fait pro) -->
-                    <div class="part-about-image">
-                        <img src="media/pp.png" alt="image de profil">
-                    </div>
-
-                    <div class="part-about-text">
-                        <ul>
-                            <li><strong>Résidence:</strong> France</li>
-                            <li><strong>Adresse:</strong> Miramas - 13140</li>
-                            <li><strong>E-mail:</strong> <a href="mailto:mateo.palmieri.pro@gmail.com">mateo.palmieri.pro@gmail.com</a></li>
-                        </ul>
-                        <p>Bonjour, je suis Matéo PALMIERI, un étudiant en 3ème année pour devenir développeur web / logiciel au campus d'Ynov à Aix-en-Provence.</p>
-                        <button class="cv"><a href="media/CV_Mateo_PALMIERI.pdf" target="_blank">Télécharger mon CV</a></button>
-                        <!-- Attention ! les bouton ne doivent pas contenir autre chose : accessibilité -->
-                    </div>
+        <div class="about-me" id="about-me">
+            <div class="about-me-card">
+                <div class="pp">
+                    <img src="media/pp.png" alt="image de profil">
                 </div>
 
+                <div class="text1">
+                    <div class="p1">
+                        <p><strong>Résidence :</strong> France - Bouches du Rhônes</p>
+                        <p><strong>Adresse :</strong> Miramas - 13140</p>
+                    </div>
+                    <div class="p2">
+                        <p><strong>Email :</strong> <a href="mailto:mateo.palmieri.pro@gmail.com">mateo.palmieri.pro@gmail.com</a></p>
+                        <p><strong>Âge :</strong> 20 ans</p>
+                    </div>
+                </div>
+                <div class="text2">
+                    <p>Bonjour, je suis Matéo PALMIERI, un étudiant en 3ème année pour devenir développeur web / logiciel au campus d'Ynov à Aix-en-Provence.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio facere, nesciunt sapiente libero nobis officiis dolor nemo exercitationem eum quidem excepturi ut amet. Nemo veniam dicta nisi vel accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repudiandae nostrum sequi, blanditiis aperiam distinctio!</p>
+                </div>
+                <form class="button-cv" id="cv" method="get" action="media/CV_Mateo_PALMIERI.pdf" target="_blank">
+                    <button type="submit">Télécharger mon CV</button>
+                </form>
             </div>
         </div>
 
+
         <!-- Langage -->
-        <div class="competence-language">
+        <div class="competence-language" id="competence">
             <h2>Langages :</h2>
             <div class="aligned">
                 <img src="media/php.png" width="50" alt="logo de PHP"> 
@@ -120,9 +122,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Utilisation de grid ou flexbox pour créer des cadres présentant les projets -->
-        <!-- fond blanc -->
 
         <!-- Pour le responsive mobile, s'inspirer d'un scroll snap CSS only -->
         <!-- https://www.instagram.com/reel/CgVxdiTNtH8/?utm_source=ig_web_copy_link -->
@@ -194,9 +193,9 @@
         <div class="footer-col">
             <h3>Sections</h3>
             <ul>
-                <li><a href="#part-about-title">À propos</a></li>
+                <li><a href="#about-me">À propos</a></li>
                 <li><a href="#cv">CV</a></li>
-                <li><a href="#list-competences-title">Compétences</a></li>
+                <li><a href="#competence">Compétences</a></li>
                 <li><a href="#projects-title">Projets</a></li>
             </ul>
         </div>
